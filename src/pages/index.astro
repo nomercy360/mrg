@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Matcha Recipe Guide">
+    <main class="flex items-center justify-between flex-col px-24 py-5 h-full text-center">
+        <div class="max-w-7xl">
+            <p>Matcha Recipe Guide</p>
+            <div class="mt-6 flex flex-row justify-center items-center gap-2 flex-wrap">
+                <a class="underline hover:font-bold" href="/blueberry-lemon-matcha-fizz-drink">Blueberry Lemon Matcha Fizz Drink</a>/
+                <a class="underline hover:font-bold" href="/matcha-latte-with-sweet-cream-cold-foam">Matcha Latte With Sweet Cream Cold Foam</a>/
+                <a class="underline hover:font-bold" href="/chlorella-matcha-latte">Chlorella Matcha Latte</a>/
+                <a class="underline hover:font-bold" href="/matcha-green-tea-arnold-palmer">Matcha Green Tea Arnold Palmer</a>
+            </div>
+        </div>
+        <button class="bg-transparent border-2 border-primary p-4 rounded-full h-[45%] w-full hover:bg-primary hover:text-secondary">
+            Add Recipe
+        </button>
+    </main>
+</Layout>
+
+<style>
+    @font-face {
+        font-display: swap;
+        font-family: 'Kommuna';
+        font-style: normal;
+        font-weight: 700;
+        src: url('/Kommuna 600 Bold.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-display: swap;
+        font-family: 'Kommuna';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/Kommuna 600 Regular.woff2') format('woff2');
+    }
+
+    * {
+        color: #7CA000;
+        font-family: Kommuna, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+</style>
